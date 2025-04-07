@@ -18,6 +18,9 @@ public class Practice {
      */
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
+        for (int i = 0; i < items.length; i++) {
+            System.out.println(items[i]);
+        }
     }
 
     /**

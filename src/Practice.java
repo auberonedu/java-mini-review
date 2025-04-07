@@ -49,11 +49,12 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
-        if (a > b*2){
-            return true;
-        } else {
-            return false;
-        }
+        // if (a > b*2){
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+        return false;
     }
 
 
@@ -86,11 +87,11 @@ public class Practice {
         }
         
         //use for loop to loop through every word to check if the word starts with A
-        for (int i = 0; i < words.length; i++){
-            if (words[i].startsWith("A")){
-                return true;
-            }
-        }
+        // for (int i = 0; i < words.length; i++){
+        //     if (words[i].startsWith("A")){
+        //         return true;
+        //     }
+        // }
                 return false;
             
         }

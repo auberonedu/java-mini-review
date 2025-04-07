@@ -77,7 +77,17 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        if (words.length == 0) return true;
+
+        boolean result = false;
+        for (String word: words) {
+            if (word.toLowerCase().startsWith("a")) {
+                result = true;
+            } else {
+                return false;
+            }
+        }
+        return result;
     }
 
     public static void main(String[] args) {

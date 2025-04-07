@@ -17,7 +17,8 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        // TODO: Implement this method here!
+        for(String item : items)
+        System.out.println(item);
     }
 
     /**
@@ -46,6 +47,12 @@ public class Practice {
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
         return false;
+        if a double(b) {
+            return false;
+        } else {
+                return true;
+            }
+        }
     }
 
 

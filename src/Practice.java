@@ -18,6 +18,10 @@ public class Practice {
      */
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
+        //use for loop to loop through every single item and print out
+        for (int i = 0; i < items.length; i++){
+            System.out.println(items[i]);
+        }
     }
 
     /**
@@ -45,7 +49,11 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        if (a > b*2){
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -71,8 +79,22 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
-    }
+        
+        //return true if array is empty
+        if (words.length == 0){
+            return true;
+        }
+        
+        //use for loop to loop through every word to check if the word starts with A
+        for (int i = 0; i < words.length; i++){
+            if (words[i].startsWith("A")){
+                return true;
+            }
+        }
+                return false;
+            
+        }
+    
 
     public static void main(String[] args) {
         System.out.println();

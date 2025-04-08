@@ -76,9 +76,21 @@ public class Practice {
      * @param words a array of words
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
+    //javac src/Practice.java && java -cp src Practice
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        boolean checker = false;
+        // System.out.println(words.length);
+        int temp = 0;
+        for (String string : words) {
+            if (String.valueOf(string.charAt(0)).toLowerCase().equals("a")) {
+                temp++;
+              }
+        }
+        if (temp == words.length) {
+            checker = true;
+        }
+        return checker;
     }
 
     public static void main(String[] args) {

@@ -14,10 +14,16 @@ public class Practice {
      * sdev
      * 220
      * 
+     * 
+     * 
      * @param items an array of strings to print
      */
+  
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
+        for (String item : items) {
+            System.out.println(item);
+        }
     }
 
     /**
@@ -82,6 +88,10 @@ public class Practice {
         System.out.println();
         System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
         printItems(new String[]{"hello", "world"});
+    }
+}
+/*        
+
 
         System.out.println();
         System.out.println("///// More than Double /////");
@@ -95,5 +105,5 @@ public class Practice {
         System.out.println("allStartWithA(new String[]{\"apes\", \"can\", \"be\", \"amazing\"}): " + allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
         System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
         System.out.println();
-    }
-}
+ */
+    

@@ -78,8 +78,17 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        if (words == null || words.length == 0) {
+            return true;
+        }
+
+        for (String word : words) {
+            if (!word.toLowerCase().startsWith("a")) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
@@ -95,6 +104,12 @@ public class Practice {
         System.out.println("moreThanDouble(10, 3): " + moreThanDouble(10, 3));
         System.out.println("moreThanDouble(6, 4): " + moreThanDouble(6, 4));
         System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
+        System.out.println();
+        System.out.println("///// All Start With A /////");
+        System.out.println("allStartWithA(new String[]{\"alligators\", \"are\", \"AWESOME\"}): " + allStartWithA(new String[]{"alligators", "are", "AWESOME"}));
+        System.out.println("allStartWithA(new String[]{\"apes\", \"can\", \"be\", \"amazing\"}): " + allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
+        System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
+        System.out.println();
     }
 }
 /*        
@@ -102,11 +117,6 @@ public class Practice {
 
 
 
-        System.out.println();
-        System.out.println("///// All Start With A /////");
-        System.out.println("allStartWithA(new String[]{\"alligators\", \"are\", \"AWESOME\"}): " + allStartWithA(new String[]{"alligators", "are", "AWESOME"}));
-        System.out.println("allStartWithA(new String[]{\"apes\", \"can\", \"be\", \"amazing\"}): " + allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
-        System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
-        System.out.println();
+
  */
     

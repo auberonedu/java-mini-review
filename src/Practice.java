@@ -74,7 +74,12 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        for (String word : words) {
+            if (!(word.charAt(0) == 'A' || word.charAt(0) == 'a')) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {

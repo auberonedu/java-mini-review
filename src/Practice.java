@@ -59,9 +59,18 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        
-        return true;
-    }
+        if(words.length == 0){
+            return true;
+        }
+            for(int i = 0; i < words.length; i++) {
+            char lowerCase = Character.toLowerCase(words[i].charAt(0));
+            if(lowerCase != 'a') {
+                return false;
+            }
+        }
+            return true;
+        }
+    
 
     public static void main(String[] args) {
         System.out.println();
